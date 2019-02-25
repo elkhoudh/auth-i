@@ -9,6 +9,7 @@ const registerRoute = require("./register");
 const server = express();
 
 // Middleware
+server.use(express.json());
 server.use(helmet());
 server.use(morgan("dev"));
 
